@@ -18,7 +18,7 @@ class EntryController {
         loadFromPersistantStore()
     }
     
-    //MARK: - CRUD
+    //MARK: - CRUD Functions
     func addEntryWith(title: String, text: String) {
         let newEntry = Entry(title: title, text: text)
         entries.append(newEntry)
