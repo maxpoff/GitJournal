@@ -25,7 +25,7 @@ class EntryListTableViewController: UITableViewController {
         let entry = EntryController.sharedInstance.entries[indexPath.row]
         
         cell.textLabel?.text = entry.title
-        cell.detailTextLabel?.text = entry.timestamp.formatToString()
+        cell.detailTextLabel?.text = entry.title
         
         return cell
     }
