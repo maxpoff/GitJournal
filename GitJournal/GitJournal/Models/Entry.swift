@@ -12,12 +12,14 @@ class Entry: Codable {
     var title: String
     var text: String
     var timestamp: Date = Date()
+    var creatorName: String?
     
-    init(title: String, text: String, timestamp: Date = Date()) {
+    init(title: String, text: String, timestamp: Date = Date(), creatorName: String? = nil) {
         
         self.title = title
         self.text = text
         self.timestamp = timestamp
+        self.creatorName = creatorName
     }
 }//end of class
 
